@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {API_URL, defaultCustomer, defaultProduct} from "../../Constants";
+import {API_URL, defaultCustomer} from "../../Constants";
 import axios from "axios";
 import {Button, ButtonGroup, Form, FormControl, Modal} from "react-bootstrap";
 import {AiOutlineClose, BiPencil, BiPlus} from "react-icons/all";

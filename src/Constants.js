@@ -1,4 +1,4 @@
-export const API_URL = "http://192.168.1.14:8080/"
+export const API_URL = "https://spoilerlibrarybackend.herokuapp.com/"
 export const defaultCustomer = {
     id: 0,
     customerName: "",
