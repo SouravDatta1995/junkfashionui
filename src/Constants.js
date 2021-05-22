@@ -1,4 +1,4 @@
-export const API_URL = "https://spoilerlibrarybackend.herokuapp.com/"
+export const API_URL = "https://junkfashionbackend.herokuapp.com/"
 export const defaultCustomer = {
     id: 0,
     customerName: "",
