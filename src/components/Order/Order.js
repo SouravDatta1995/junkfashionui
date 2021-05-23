@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Card, Container, Tab, Tabs} from "react-bootstrap";
 import NewOrderModal from "./NewOrderModal";
+import OrderHistory from "./OrderHistory";
 
 function Order(props) {
 
@@ -14,7 +15,7 @@ function Order(props) {
                         <NewOrderModal/>
                     </Tab>
                     <Tab eventKey={"orderHistory"} title={"Order History"}>
-                        <div>Test</div>
+                        <OrderHistory/>
                     </Tab>
                 </Tabs>
             </Card>

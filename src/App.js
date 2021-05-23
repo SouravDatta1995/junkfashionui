@@ -1,5 +1,5 @@
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/scss/bootstrap.scss";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import AdminHome from "./components/AdminHome";
 

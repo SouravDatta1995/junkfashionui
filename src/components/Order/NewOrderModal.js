@@ -4,6 +4,7 @@ import {Button, Card, Col, Form, FormControl, FormGroup, InputGroup, ListGroup, 
 import axios from "axios";
 import {API_URL, defaultCustomer, defaultOrder, defaultProduct} from "../../Constants";
 import {AiOutlineDelete, BiMinus, BiPlus, BiSend, BsCheck, BsPencil, MdPlusOne} from "react-icons/all";
+import moment from "moment";
 
 function NewOrderModal() {
 
@@ -70,7 +71,11 @@ function NewOrderModal() {
     const completeOrder = () => {
 
         let finalOrder = orderList.orders
-        finalOrder.forEach(order => order.customer = customerDetails)
+        finalOrder.forEach(order => {
+            order.customer = customerDetails
+            order.orderDate = moment().toISOString()
+            console.log(moment().toISOString())
+        })
         console.log(JSON.stringify(finalOrder))
         axios.post(API_URL + "/order/createOrder", finalOrder).then(
             res => res.data === "New Order Added" ?
