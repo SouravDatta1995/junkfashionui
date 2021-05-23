@@ -20,3 +20,24 @@ export const defaultOrder = {
     sellingPrice: 0,
     orderDate: ""
 }
+export const defaultOrderHistory = {
+    orders : [
+        {
+            orderDate: "",
+            customerOrders: [
+                {
+                    customerName: "",
+                    customerPhone: "",
+                    orderResponses: [
+                        {
+                            "product": defaultProduct,
+                            "productCount": 0,
+                            "profit": 0.0
+                        }
+                    ]
+                }
+            ],
+            "totalProfit": 0.0
+        }
+        ]
+}
